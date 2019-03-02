@@ -9,7 +9,7 @@ import com.timothy.todoapp.room.GenericDao
 abstract class ReminderDao : GenericDao<Reminder>() {
 
     @Query("select * from Reminder where id=:id ")
-    abstract fun findReminderById(id: Long): Reminder
+    abstract fun findReminderById(id: Long): LiveData<Reminder>
 
     @Query("select * from Reminder")
     abstract fun findReminders(id: Long): LiveData<List<Reminder>>
