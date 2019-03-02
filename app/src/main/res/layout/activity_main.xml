@@ -51,9 +51,11 @@
             app:backgroundTint="@color/colorAccent"
             app:cornerRadius="16dp"
             app:iconPadding="-12dp" android:layout_margin="10dp"/>
-    <com.google.android.material.chip.ChipGroup
+
+    <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:id="@+id/chip_group"/>
+            android:layout_height="match_parent"/>
 
 
 </LinearLayout>

@@ -10,12 +10,10 @@ import org.koin.dsl.module.module
 object Modules {
     val appModules = module {
         single { GsonBuilder().setPrettyPrinting().serializeSpecialFloatingPointValues().serializeNulls().create() }
-        single { AppDatabase.getInstance(get()) }
+        factory { AppDatabase.getInstance(get()) }
 
-        module("Main") {
-            single { ReminderService(get(), get()) }
-            viewModel { MainActivityViewModel(get()) }
-        }
+        single { ReminderService(get(), get()) }
+        viewModel { MainActivityViewModel(get()) }
 
     }
 }
