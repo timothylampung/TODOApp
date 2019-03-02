@@ -6,7 +6,8 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 
 abstract class BaseActivity : AppCompatActivity() {
     private val TAG = "BaseActivity"
@@ -14,6 +15,7 @@ abstract class BaseActivity : AppCompatActivity() {
     var fragment: Fragment? = null
     lateinit var manager: FragmentManager
 
+    val json: Gson = GsonBuilder().setPrettyPrinting().serializeSpecialFloatingPointValues().serializeNulls().create()
 
     final override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +29,12 @@ abstract class BaseActivity : AppCompatActivity() {
 
     abstract fun onCreated(savedInstanceState: Bundle?)
 
-    private fun addFragmentToActivity(fragmentManager: FragmentManager,
-                                      fragment: Fragment,
-                                      frameId: Int,
-                                      tag: String?) {
+    private fun addFragmentToActivity(
+        fragmentManager: FragmentManager,
+        fragment: Fragment,
+        frameId: Int,
+        tag: String?
+    ) {
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(frameId, fragment, tag)
         transaction.commit()
@@ -41,10 +45,11 @@ abstract class BaseActivity : AppCompatActivity() {
         if (this.fragment == null) {
             this.fragment = fragment
         }
-        addFragmentToActivity(manager,
-                this.fragment!!,
-                frameId,
-                FRAGMENT_TAG
+        addFragmentToActivity(
+            manager,
+            this.fragment!!,
+            frameId,
+            FRAGMENT_TAG
         )
         updateUI()
     }

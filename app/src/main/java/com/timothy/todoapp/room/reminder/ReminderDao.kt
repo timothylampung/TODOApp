@@ -12,5 +12,5 @@ abstract class ReminderDao : GenericDao<Reminder>() {
     abstract fun findReminderById(id: Long): LiveData<Reminder>
 
     @Query("select * from Reminder")
-    abstract fun findReminders(id: Long): LiveData<List<Reminder>>
+    abstract fun findReminders(): LiveData<List<Reminder>>
 }

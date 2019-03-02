@@ -17,19 +17,29 @@ class ReminderService(
     val reminderDao: ReminderDao = this.database.reminderDao()
 
     fun save(reminder: Reminder): Completable? {
-        Log.d(TAG, "reminder : " + json.toJson(reminder))
+        Log.d(TAG, "save reminder : " + json.toJson(reminder))
         return Completable.fromAction {
             reminderDao.insert(reminder)
         }
     }
 
-    fun findReminderById(id : Long) : LiveData<Reminder> = reminderDao.findReminderById(id)
+    fun findReminderById(id: Long): LiveData<Reminder> = reminderDao.findReminderById(id)
 
-    //TODO get reminders
-    //TODO get reminder
-    //TODO delete reminder
-    //TODO update reminder
+    fun findReminders(): LiveData<List<Reminder>> = reminderDao.findReminders()
 
+    fun deleteReminder(reminder: Reminder): Completable? {
+        Log.d(TAG, "deleteReminder reminder : " + json.toJson(reminder))
+        return Completable.fromAction {
+            reminderDao.delete(reminder)
+        }
+    }
+
+    fun updateReminder(reminder: Reminder): Completable? {
+        Log.d(TAG, "updateReminder reminder : " + json.toJson(reminder))
+        return Completable.fromAction {
+            reminderDao.update(reminder)
+        }
+    }
 
     companion object {
         private const val TAG = "RmdrSvc"
