@@ -1,4 +1,4 @@
-package com.koin.util
+package com.timothy.todoapp.util
 
 import org.koin.dsl.module.module
 
