@@ -1,12 +1,15 @@
 package com.timothy.todoapp.view.main
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.example.nzais.spotitmobile.base.BaseActivity
 import com.timothy.todoapp.R
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity() {
+
+    override fun contentViewRes(): Int = R.layout.activity_main
+
+    override fun onCreated(savedInstanceState: Bundle?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
 }
