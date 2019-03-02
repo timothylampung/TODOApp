@@ -1,4 +1,4 @@
-package com.timothy.todoapp.view
+package com.timothy.todoapp.view.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

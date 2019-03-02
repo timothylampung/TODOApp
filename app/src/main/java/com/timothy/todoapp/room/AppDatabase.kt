@@ -3,11 +3,13 @@ package com.timothy.todoapp.room
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import android.content.Context
+import androidx.room.Database
 import com.timothy.todoapp.room.config.Configuration
 import com.timothy.todoapp.room.config.ConfigurationDao
+import com.timothy.todoapp.room.reminder.Reminder
 
 
-@androidx.room.Database(entities = [Configuration::class], exportSchema = false, version = 4)
+@Database(entities = [Configuration::class, Reminder::class], exportSchema = false, version = 4)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun configurationDao(): ConfigurationDao

@@ -1,10 +1,6 @@
 package com.timothy.todoapp.room
 
-import java.lang.reflect.ParameterizedType
-import androidx.sqlite.db.SimpleSQLiteQuery
-import androidx.lifecycle.LiveData
 import androidx.room.*
-import androidx.sqlite.db.SupportSQLiteQuery
 
 
 abstract class GenericDao<E> {
