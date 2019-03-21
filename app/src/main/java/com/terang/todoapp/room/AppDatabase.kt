@@ -1,13 +1,13 @@
-package com.timothy.todoapp.room
+package com.terang.todoapp.room
 
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import android.content.Context
 import androidx.room.Database
-import com.timothy.todoapp.room.config.Configuration
-import com.timothy.todoapp.room.config.ConfigurationDao
-import com.timothy.todoapp.room.reminder.Reminder
-import com.timothy.todoapp.room.reminder.ReminderDao
+import com.terang.todoapp.room.config.Configuration
+import com.terang.todoapp.room.config.ConfigurationDao
+import com.terang.todoapp.room.reminder.Reminder
+import com.terang.todoapp.room.reminder.ReminderDao
 
 
 @Database(entities = [Configuration::class, Reminder::class], exportSchema = false, version = 4)

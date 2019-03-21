@@ -1,4 +1,4 @@
-package com.timothy.todoapp.room
+package com.terang.todoapp.room
 
 import androidx.room.*
 

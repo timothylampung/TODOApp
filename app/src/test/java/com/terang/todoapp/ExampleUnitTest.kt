@@ -1,4 +1,4 @@
-package com.timothy.todoapp
+package com.terang.todoapp
 
 import org.junit.Test
 

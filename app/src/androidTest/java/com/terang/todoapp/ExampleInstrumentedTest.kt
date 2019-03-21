@@ -1,4 +1,4 @@
-package com.timothy.todoapp
+package com.terang.todoapp
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

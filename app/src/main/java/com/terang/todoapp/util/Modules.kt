@@ -1,9 +1,9 @@
-package com.timothy.todoapp.util
+package com.terang.todoapp.util
 
 import com.google.gson.GsonBuilder
-import com.timothy.todoapp.room.AppDatabase
-import com.timothy.todoapp.service.ReminderService
-import com.timothy.todoapp.view.main.MainActivityViewModel
+import com.terang.todoapp.room.AppDatabase
+import com.terang.todoapp.service.ReminderService
+import com.terang.todoapp.view.main.MainActivityViewModel
 import org.koin.android.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.module
 

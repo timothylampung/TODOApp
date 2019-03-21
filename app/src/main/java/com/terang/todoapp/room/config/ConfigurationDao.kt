@@ -1,9 +1,9 @@
-package com.timothy.todoapp.room.config
+package com.terang.todoapp.room.config
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Query
-import com.timothy.todoapp.room.GenericDao
+import com.terang.todoapp.room.GenericDao
 
 @Dao
 abstract class ConfigurationDao : GenericDao<Configuration>() {

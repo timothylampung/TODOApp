@@ -1,11 +1,11 @@
-package com.timothy.todoapp.service
+package com.terang.todoapp.service
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import com.google.gson.Gson
-import com.timothy.todoapp.room.AppDatabase
-import com.timothy.todoapp.room.reminder.Reminder
-import com.timothy.todoapp.room.reminder.ReminderDao
+import com.terang.todoapp.room.AppDatabase
+import com.terang.todoapp.room.reminder.Reminder
+import com.terang.todoapp.room.reminder.ReminderDao
 import io.reactivex.Completable
 
 

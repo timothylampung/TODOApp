@@ -1,9 +1,9 @@
-package com.timothy.todoapp.room.reminder
+package com.terang.todoapp.room.reminder
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Query
-import com.timothy.todoapp.room.GenericDao
+import com.terang.todoapp.room.GenericDao
 
 @Dao
 abstract class ReminderDao : GenericDao<Reminder>() {

@@ -1,14 +1,12 @@
-package com.timothy.todoapp.view.main
+package com.terang.todoapp.view.main
 
 import android.os.Bundle
-import android.util.AttributeSet
 import android.util.Log
 import android.widget.RadioButton
 import androidx.lifecycle.Observer
-import com.example.nzais.spotitmobile.base.BaseActivity
-import com.google.android.material.chip.Chip
-import com.timothy.todoapp.R
-import com.timothy.todoapp.room.reminder.Reminder
+import com.terang.todoapp.base.BaseActivity
+import com.terang.todoapp.R
+import com.terang.todoapp.room.reminder.Reminder
 import io.reactivex.CompletableObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

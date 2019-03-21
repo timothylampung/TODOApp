@@ -1,4 +1,4 @@
-package com.example.nzais.spotitmobile
+package com.terang.todoapp
 
 object Constant {
     //    public static final String BASE_URL = "http://159.65.3.103:8080/assessment/";

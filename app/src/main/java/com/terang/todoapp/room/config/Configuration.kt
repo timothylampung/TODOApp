@@ -1,4 +1,4 @@
-package com.timothy.todoapp.room.config
+package com.terang.todoapp.room.config
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

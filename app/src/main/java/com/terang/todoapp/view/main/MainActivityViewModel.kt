@@ -1,9 +1,9 @@
-package com.timothy.todoapp.view.main
+package com.terang.todoapp.view.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.timothy.todoapp.room.reminder.Reminder
-import com.timothy.todoapp.service.ReminderService
+import com.terang.todoapp.room.reminder.Reminder
+import com.terang.todoapp.service.ReminderService
 import io.reactivex.Completable
 
 class MainActivityViewModel(private val reminderService: ReminderService) : ViewModel() {

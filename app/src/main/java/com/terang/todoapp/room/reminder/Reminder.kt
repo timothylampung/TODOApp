@@ -1,4 +1,4 @@
-package com.timothy.todoapp.room.reminder
+package com.terang.todoapp.room.reminder
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
