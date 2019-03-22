@@ -7,11 +7,6 @@ import com.terang.todoapp.service.GithubService
 
 class GithubListViewModel(private val githubService: GithubService) : ViewModel() {
 
-    //TODO Get list of repos from github
-    /*@param : null
-    * @return repos
-    * */
-
     fun getRepos(): LiveData<List<Repos>> = githubService.getRepos()
 
     fun addNewRepo() {}
