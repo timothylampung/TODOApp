@@ -77,4 +77,5 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
     implementation "com.jakewharton.rxrelay2:rxrelay:$rxRelayVersion"
 
-    implementation 'io.github.microutils:kotlin-logging:1.6.24'}
+    implementation 'io.github.microutils:kotlin-logging:1.6.24'
+}
