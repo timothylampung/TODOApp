@@ -10,7 +10,9 @@ import org.koin.android.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.module
 
 object Modules {
+
     val appModules = module {
+
         single { GsonBuilder().setPrettyPrinting().serializeSpecialFloatingPointValues().serializeNulls().create() }
         factory { AppDatabase.getInstance(get()) }// Database instance
         single { ReminderService(get(), get()) }
@@ -21,5 +23,7 @@ object Modules {
         module("github") {
             viewModel { GithubListViewModel(get()) }
         }
+
+
     }
 }
